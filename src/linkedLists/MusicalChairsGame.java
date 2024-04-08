@@ -9,6 +9,8 @@ public class MusicalChairsGame {
 
 		System.out.println(mc1);
 		System.out.println(mc2);
+		
+		System.out.println(mc1.play());
 	}
 
 }
