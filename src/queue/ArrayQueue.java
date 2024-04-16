@@ -93,12 +93,12 @@ public class ArrayQueue {
 	
 	public void display() {
 		if(!isEmpty()) {
-			for(int i = 0; i <rear; i++) {
+			for(int i = 0; i <rear-1; i++) {
 				System.out.println(this.queue[i]);
 			}
 		}
 		else {
-			System.out.println("Queue is empty!");
+			System.err.println("Queue is empty!");
 		}
 	}
 
