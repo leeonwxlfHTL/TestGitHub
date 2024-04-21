@@ -1,8 +1,6 @@
 package queue;
 
-/**
- * A simple implementation of a queue using an array.
- */
+
 public class ArrayQueue {
 
 	private int capacity; // Generelle Größe
@@ -10,11 +8,7 @@ public class ArrayQueue {
 	private int rear; // Index des hintersten Elements
 	private int[] queue; // Das Array, das die Elemente der Queue speichert
 
-	/**
-	 * Constructs an empty queue with the specified capacity.
-	 *
-	 * @param capacity the capacity of the queue
-	 */
+	
 	public ArrayQueue(int capacity) {
 		this.front = 0;
 		this.rear = 0;
@@ -22,92 +16,51 @@ public class ArrayQueue {
 		this.queue = new int[capacity];
 	}
 
-	/**
-	 * Returns the capacity of the queue.
-	 *
-	 * @return the capacity of the queue
-	 */
+	
 	public int getCapacity() {
 		return capacity;
 	}
 
-	/**
-	 * Sets the capacity of the queue.
-	 *
-	 * @param capacity the new capacity of the queue
-	 */
+	
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
 
-	/**
-	 * Returns the index of the front element.
-	 *
-	 * @return the index of the front element
-	 */
+	
 	public int getFront() {
 		return front;
 	}
 
-	/**
-	 * Sets the index of the front element.
-	 *
-	 * @param front the new index of the front element
-	 */
+	
 	public void setFront(int front) {
 		this.front = front;
 	}
 
-	/**
-	 * Returns the index of the rear element.
-	 *
-	 * @return the index of the rear element
-	 */
+	
 	public int getRear() {
 		return rear;
 	}
 
-	/**
-	 * Sets the index of the rear element.
-	 *
-	 * @param rear the new index of the rear element
-	 */
+	
 	public void setRear(int rear) {
 		this.rear = rear;
 	}
 
-	/**
-	 * Returns the array representing the queue.
-	 *
-	 * @return the array representing the queue
-	 */
+	
 	public int[] getQueue() {
 		return queue;
 	}
 
-	/**
-	 * Sets the array representing the queue.
-	 *
-	 * @param queue the new array representing the queue
-	 */
 	public void setQueue(int[] queue) {
 		this.queue = queue;
 	}
 
-	/**
-	 * Checks if the queue is empty.
-	 *
-	 * @return true if the queue is empty, false otherwise
-	 */
+	
 	public boolean isEmpty() {
 		return front == rear;
 	}
 
-	/**
-	 * Checks if the queue is full.
-	 *
-	 * @return true if the queue is full, false otherwise
-	 */
+	
 	public boolean isFull() {
 		return rear == capacity;
 	}
