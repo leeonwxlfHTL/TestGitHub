@@ -51,7 +51,8 @@ public class UPN {
 	}
 
 	public static void main(String[] args) {
-
+		String str = "47 11 +";
+		System.out.println(calculateUPN(str));
 	}
 
 }
